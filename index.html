@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Aplikasi Ujian Saringan Masuk Online Dengan Fitur Lock Screen - Purwandi </title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/impress.css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script>
+    (function(d,ua){
+      if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
+        d.className += " supported ";
+      }
+    })(document.documentElement, navigator.userAgent.toLowerCase());
+  </script>
+</head>
+<body class="impress-not-supported">
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+
+  </header>
+
+  <!-- fallback message -->
+  <div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+  <!-- end message -->
+
+  <!--  Start Impress Js
+  ===================================================== -->
+  <div id="impress">
+    <!--  Title
+    ===================================================== -->
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="1">
+      <h1>APLIKASI UJIAN SARINGAN MASUK FAKULTAS ONLINE DENGAN FITUR LOCK SCREEN PADA FAKULTAS ILMU KOMPUTER UNIVERSITAS MERCU BUANA JAKARTA</h1>
+      <img src="img/mercubuana.gif" class="clearfix" title="Logo Universitas Mercubuaba" height="250px"/>
+      <br /><br /><br />
+      <div>Oleh : <br > Purwandi M ( 41508110084 )</div>
+      <div class="footnote">
+        Program Studi Teknik Informatika <br />
+        Fakultas Ilmu Komputer <br />
+        Universitas Mercubuana <br />
+        Jakarta, ...... Agustus 2012
+      </div>     
+    </div> <!-- end title -->
+
+    <!--  Agenda Presentasi
+    ===================================================== -->
+    <div id="agenda" class="step" data-x="1700" data-y="0" data-rotate-y="50" data-scale="1">
+      <h1>Agenda Presentasi</h1>
+      <ol>
+        <li>
+          Pendahuluan
+          <ol>
+            <li>Latar Belakang</li>
+            <li>Perumusan Masalah</li>
+            <li>Batasan Penelitian</li>
+            <li>Tujuan & Manfaat</li>
+            <li>Metodologi Penelitian</li>
+            <li>Sistematika Penulisan</li>
+          </ol>
+        </li>
+        <li>Tinjauan Pustaka</li>
+        <li>Analisa dan Perancangan</li>
+        <li>Implementasi dan Pengujian</li>
+        <li>Kesimpulan dan Saran</li>
+      </ol>
+    </div>
+    <!-- 1. Pendahuluan
+    ===================================================== -->
+
+      <!-- 1.1. Latar Belakang
+      ===================================================== -->
+      <div id="latar-belakang" class="step" data-x="4200" data-y="100" data-z="100" data-rotate-y="150" data-scale="1">
+        <h1>Latar Belakang</h1>
+        <div class="number">1</div> <p>Fakultas Ilmu Komputer ingin melakukan ujian saringan masuk calon mahasiswa baru yang dilakuka  secara online </p>
+        <div class="number">2</div><p>Ujian saringan masuk online yang ada saat ini, tidak mampu mengatasi tindak kecurangan yang dilakukan oleh calon mahasiswa baru ketika melakukan pengisian ujian online. </p>
+        <ol>
+          <li>Misalnya membuka window baru (dimana window tersebut memuat jawaban untuk menjawab soal)</li>
+          <li>Soal ujian yang ditampilkan dalam sistem,  masih sama antara calon mahasiswa satu dengan yang lain</li>
+        </ol>
+        <div class="number">3</div><p>Dengan adanya fitur fullscreen api yang terdapat di perangkat lunak peramban web modern, dimungkinkan pengerjaan ujian saringan masuk online melalui perangkat lunak peramban web dapat di kunci (lock) sehingga tidak dapat membuka window baru</p>
+      </div>
+
+      <!-- 1.2. Perumusan Masalah
+      ===================================================== -->
+      <div id="rumusan-masalah" class="step" data-x="2400" data-y="0" data-rotate="90" data-scale="1">
+        <h1>Perumusan Masalah</h1>
+        <div class="number">1</div> <p>Bagaimana merancang dan membangun sistem perangkat lunak untuk pelaksanaan ujian saringan masuk Fakultas Ilmu Komputer di Universitas Mercubuana Meruya secara online? </p>
+        <div class="number">3</div> <p>Bagaimana mengimplementasikan lock screen pada sistem ujian saringan masuk online?</p>
+      </div>
+
+      <!-- 1.3. Batasan Penelitian
+      ===================================================== -->
+      <div id="batasan" class="step"  data-x="3400" data-y="1000" data-scale="2">
+        <h1>Perumusan Masalah</h1>
+        <ol>
+          <li>Ujian terdiri dari beberapa topik mata pelajaran, dimana dalam sebuah topik memiliki bobot, waktu  dan beberapa soal ujian</li>
+          <li>Soal ujian dapat berupa soal cerita, sehingga di dalam sebuah soal cerita dapat terdiri dari beberapa soal</li>
+          <li>Soal ujian saringan masuk berbentuk pilihan ganda</li>
+          <li>Sistem penilaian yang digunakan mempunyai rentang antara 0 sampai dengan 100</li>
+          <li>Sistem ujian saringan fakultas hanya bisa berjalan pada perangkat lunak web terbaru, dimana perangkat lunak tersebut telah menggunakan teknologi HTML5 khususnya fullscreen API</li>
+          <li>Sistem ujian saringan fakultas tidak bisa berjalan di browser handphone maupun smartphone</li>
+          <li>Dalam pengembangan perangkat lunak ujian saringan masuk online menggunakan bahasa pemrogaman PHP dan memakai Laravel Framework dan untuk tampilan pengguna (user interface) penulis menggunakan Twitter Bootstrap</li>
+        </ol>
+      </div>
+
+      <!-- 1.4. Tujuan
+      ===================================================== -->
+
+      <!-- 1.5. Manfaat
+      ===================================================== -->
+
+      <!-- 1.6. Metodologi Penelitian
+      ===================================================== -->
+
+      <!-- 1.7. Sistematika Penulisan
+      ===================================================== -->
+
+
+    <!-- 2. Landasan Teori
+    ===================================================== -->
+
+      <!-- 2.1 Rekayasa Perangkat Lunak
+      ===================================================== -->
+
+      <!-- 2.2 SDLC
+      ===================================================== -->
+
+      <!-- 2.3 PBO
+      ===================================================== -->
+
+      <!-- 2.4 PHP & Laravel
+      ===================================================== -->
+
+      <!-- 2.5 Git Version Control
+      ===================================================== -->
+
+      <!-- 2.6 HTML5
+      ===================================================== -->
+
+      <!-- 2.7 Ujian Saringan Masuk
+      ===================================================== -->
+
+    <!-- 3. Analisia dan Perancangan
+    ===================================================== -->
+
+      <!-- 3.1 Prosedur USM
+      ===================================================== -->
+
+      <!-- 3.2 Penskoran
+      ===================================================== -->
+
+      <!-- 3.3 Use Case
+      ===================================================== -->
+
+      <!-- 3.4 Use Case Description
+      ===================================================== -->
+
+      <!-- 3.5 Sequencial
+      ===================================================== -->
+
+      <!-- 3.6 Perancangan Antar Muka
+      ===================================================== -->
+
+
+    <!-- 4. Implementasi dan Pengujian
+    ===================================================== -->
+
+
+    <!-- 5. Kesimpulan dan Saran
+    ===================================================== -->
+
+      <!-- 5.1 Kesimpulan
+      ===================================================== -->
+
+      <!-- 5.2 Saran
+      ===================================================== -->
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div> <!-- end overview -->
+  
+  </div> <!-- end impress capsul -->
+
+  <div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+  <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+  </script>
+
+  <script src="js/libs/jquery-1.7.1.min.j"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/impress.js"></script>
+  <script>impress().init();</script>
+
+
+</body>
+</html>
