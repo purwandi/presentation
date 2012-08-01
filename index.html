@@ -14,8 +14,10 @@
   
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/impress.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="js/prefixfee.js"></script>
   <script>
     (function(d,ua){
       if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
@@ -43,179 +45,30 @@
     <!--  Title
     ===================================================== -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="1">
-      <h1>APLIKASI UJIAN SARINGAN MASUK FAKULTAS ONLINE DENGAN FITUR LOCK SCREEN PADA FAKULTAS ILMU KOMPUTER UNIVERSITAS MERCU BUANA JAKARTA</h1>
-      <img src="img/mercubuana.gif" class="clearfix" title="Logo Universitas Mercubuaba" height="250px"/>
+      <h1 class="center">
+        <div class="short">APLIKASI UJIAN SARINGAN MASUK FAKULTAS ONLINE</div>
+        <div class="css">DENGAN FITUR LOCK SCREEN PADA FAKULTAS ILMU KOMPUTER</div>
+        <div class="transforms">UNIVERSITAS MERCU BUANA JAKARTA</div>
+      </h1>
+      <div class="row">
+        <div class="span8 offset4">
+          <img src="img/mercubuana.gif" class="center" title="Logo Universitas Mercubuaba" height="250px"/>
+        </div>
+      </div>
+      
       <br /><br /><br />
-      <div>Oleh : <br > Purwandi M ( 41508110084 )</div>
-      <div class="footnote">
+      <div class="center">Oleh : <br > Purwandi M ( 41508110084 )</div>
+      <div class="footnote center">
         Program Studi Teknik Informatika <br />
         Fakultas Ilmu Komputer <br />
-        Universitas Mercubuana <br />
-        Jakarta, ...... Agustus 2012
+        Universitas Mercu Buana <br />
+        Jakarta, 4 Agustus 2012
       </div>     
     </div> <!-- end title -->
 
-    <!--  Agenda Presentasi
-    ===================================================== -->
-    <div id="agenda" class="step" data-x="1700" data-y="0" data-rotate-y="50" data-scale="1">
-      <h1>Agenda Presentasi</h1>
-      <ol>
-        <li>Pendahuluan</li>
-        <li>Tinjauan Pustaka</li>
-        <li>Analisa dan Perancangan</li>
-        <li>Implementasi dan Pengujian</li>
-        <li>Kesimpulan dan Saran</li>
-      </ol>
-    </div>
-    <!-- 1. Pendahuluan
-    ===================================================== -->
 
-      <!-- 1.1. Latar Belakang
-      ===================================================== -->
-      <div id="latar-belakang" class="step" data-x="4200" data-y="100" data-z="100" data-rotate-y="150" data-scale="1">
-        <h1>Latar Belakang</h1>
-        <p>Ujian yang dulunya hanya dapat dilaksanakan secara konvensional sekarang dapat dilakukan secara online. </p>
-
-        <p>Ujian saringan masuk online yang ada saat ini masih terdapat celah untuk melakukan tindak kecurangan. </p>
-        <p>Hal ini dikarenakan calon mahasiswa baru dapat membuka jendela (window) baru di peramban (browser) web maupun perangkat lunak lainnya, dimana di dalam jendela tersebut dapat memuat jawaban untuk menjawab soal.</p>
-        
-      </div>
-
-      <!-- 1.2. Perumusan Masalah
-      ===================================================== -->
-      <div id="rumusan-masalah" class="step" data-x="2400" data-y="0" data-rotate="90" data-scale="1">
-        <h1>Perumusan Masalah</h1>
-        <div class="number">1</div> <p>Bagaimana merancang dan membangun sistem perangkat lunak untuk pelaksanaan ujian saringan masuk Fakultas Ilmu Komputer di Universitas Mercubuana Meruya secara online? </p>
-        <div class="number">3</div> <p>Bagaimana mengimplementasikan lock screen pada sistem ujian saringan masuk online?</p>
-      </div>
-
-      <!-- 1.3. Batasan Penelitian
-      ===================================================== -->
-      <div id="batasan" class="step"  data-x="3400" data-y="1000" data-scale="2">
-        <h1>Perumusan Masalah</h1>
-        <ol>
-          <li>Ujian terdiri dari beberapa topik mata pelajaran, dimana dalam sebuah topik memiliki bobot, waktu  dan beberapa soal ujian</li>
-          <li>Dapat berupa soal cerita, sehingga di dalam sebuah soal cerita dapat terdiri dari beberapa soal</li>
-          <li>Soal ujian saringan masuk berbentuk pilihan ganda</li>
-          <li>Sistem penilaian yang digunakan mempunyai rentang antara 0 sampai dengan 100</li>
-          <li>Hanya bisa berjalan pada perangkat lunak web terbaru (HTML5 fullscreen API)</li>
-          <li>Tidak bisa berjalan di browser handphone maupun smartphone</li>
-          <li>Dalam pengembangan menggunakan PHP(Laravel Framework) dan untuk tampilan pengguna memakai Twitter Bootstrap</li>
-        </ol>
-      </div>
-
-      <!-- 1.4. Tujuan
-      ===================================================== -->
-      <div id="tujuan" class="step">
-        <p>Melakukan rancang bangun sistem ujian saringan masuk online agar pelaksanaan ujian dapat di lakukan dimana saja</p>
-        <p>Mengimplementasikan fullscreen API untuk penguncian layar (lock screen) pada sistem ujian saringan masuk online</p>
-      </div>
-      <!-- 1.5. Manfaat
-      ===================================================== -->
-      <div id="manfaat" class="step">
-        <p>Mengurangi tindak kecurangan yang terjadi pada saat ujian saringan fakultas secara online dilaksanakan</p>
-        <p>Untuk pihak fakultas</p>
-        a.  membantu proses administrasi.
-b.  mengurangi biaya pelaksanaan ujian, terutama penggunaan kertas.
-c.  menjaring calon mahasiswa baru yang memenuhi kriteria dan karakteristik masing-masing fakultas.
-d.  mengetahui rekapitulasi jumlah mahasiswa yang lolos dan tidak lolos seleksi pada setiap hari atau pada waktu tertentu.
-e.  meningkatkan mutu pendidikan di fakultas.
-f.  meninggkatkan kualitas kelulusan.
-3.  Untuk calon mahasiswa, dengan menggunakan perangkat lunak ini dapat:
-a.  menghemat waktu dan biaya transportasi, karena dapat mengikuti proses ujian diluar universitas.
-b.  langsung mengetahui hasil ujian setelah selesai mengerjakan ujian
-
-      </div>
-      <!-- 1.6. Metodologi Penelitian
-      ===================================================== -->
-      <div id="metodologi" class="step">
-       Dalam melakukan penelitian, penulis menggunakan metode rekayasa perangkat lunak model parallel development. Parallel development merupakan salah satu metode pengembangan perangkat lunak yang banyak digunakan. Dengan metode parallel ini pengembang dapat membagi poses pengembangan menjadi sub-sub / cabang-cabang yang bisa di kerjakan secara parallel. Metode ini sangat efisien karena dapat mempercepat waktu pengembangan sistem perangkat lunak.
-      </div>
-
-    <!-- 2. Landasan Teori
-    ===================================================== -->
-    <div id="landasan-teori">
-      Pada Bab Landasan Teori  di bahas mengenai landasan-landasan teori 
-      yang berhubungan dengan Teori Perencanaan Kapasitas Sumber Daya TI secara umum & Sistem Jaringan, secara khusus yang berhubungan dengan Bandwidth.
-    </div>
-      <!-- 2.1 Rekayasa Perangkat Lunak Berbasisi Objek
-      ===================================================== -->
-      Rekayasa Perangkat Lunak Berorientasi Objek
-      strategi pengembangan perangkat lunak yang mengorganisasikan perangkat lunak sebagai kumpulan objek yang berisi data dan operasi yang diberlakukan terhadapnya 
-      a.  Encapsulation (pengkapsulan) penyembunyian informasi.
-      b.  Inheritance (turunan)
-      c.  Polymorphism (method/fungsi yang sama akan tetapi berbeda cara penerapannya).
-
-
-      <!-- 2.2 SDLC
-      ===================================================== -->
-
-      <!-- 2.3 PBO
-      ===================================================== -->
-
-      <!-- 2.4 PHP & Laravel
-      ===================================================== -->
-      Laravel adalah kerangka aplikasi web PHP 5.3 yang ditulis oleh Taylor Otwell. Kerangka kerja ini ditulis dengan PHP 5.3 fitur dalam pikiran. Kombinasi fitur dan sintaks sangat ekspresif telah menyebabkan kerangka kerja ini mulai populer. Framework ini menganut alur sistem berbasis MVC
-
-      Gambar MVC
-
-      <!-- 2.5 Git Version Control
-      ===================================================== -->
-      Kontrol versi (version control) adalah sebuah sistem yang mencatat setiap perubahan terhadap sebuah berkas atau kumpulan berkas sehingga pada suatu dapat dikembalikan kepada salah satu versi dari berkas tersebut 
-
-      <!-- 2.6 HTML5
-      ===================================================== -->
-      HTML5 merupakan revisi kelima dari HTML markup languange yang didalamnya membawa CSS3 dan serangkain javascript API baru. Bersama-sama, teknologi ini memungkinkan untuk membuat aplikasi yang kompleks yang sebelumnya hanya dapat dibuat untuk platform desktop
-
-      Fitur baru dalam HTML5 antara lain:
-1.  Class Multimedia, elemen video dan audio  untuk media pemutaran
-2.  Class Offline and Storage, dukungan yang lebih baik untuk penyimpanan secara offline, aplikasi web dapat berjalan cepat dan bekerja walaupun tidak adanya koneksi internet. Hal ini dikarenakan aplikasi HTML5 cache, Indexed DB dan File API
-3.  Class Performance and Integration
-4.  Class Semantic, elemen  konten yang  lebih  spesifik, seperti  artikel, footer, header, navigation, section serta penambahan bentuk form kontrol seperti kalender, tanggal, waktu, e-mail, URL, search.
-5.  Class CSS3
-6.  Class 3D, Graphics and Effects, terdapat teknologi SVG, Canvas, WebGL dan CSS3 3D fitur yang memungkin hal ini terjadi
-7.  Class Connectivity, konektifitas yang lebih efisien ini berarti real-time chating, game yang lebih cepat dan komunikasi yang lebig baik 
-8.  Class Device Access, dimulai dengan Geolocation API, Aplikasi Web dapat menyajikan kaya, perangkat-sadar fitur dan pengalaman. Inovasi perangkat akses yang luar biasa sedang dikembangkan dan dilaksanakan, dari audio / video input untuk akses.
-
-
-      <!-- 2.7 Ujian Saringan Masuk
-      ===================================================== -->
-
-    <!-- 3. Analisia dan Perancangan
-    ===================================================== -->
-
-      <!-- 3.1 Prosedur USM
-      ===================================================== -->
-
-      <!-- 3.2 Penskoran
-      ===================================================== -->
-
-      <!-- 3.3 Use Case
-      ===================================================== -->
-
-      <!-- 3.4 Use Case Description
-      ===================================================== -->
-
-      <!-- 3.5 Sequencial
-      ===================================================== -->
-
-      <!-- 3.6 Perancangan Antar Muka
-      ===================================================== -->
-
-
-    <!-- 4. Implementasi dan Pengujian
-    ===================================================== -->
-
-
-    <!-- 5. Kesimpulan dan Saran
-    ===================================================== -->
-
-      <!-- 5.1 Kesimpulan
-      ===================================================== -->
-
-      <!-- 5.2 Saran
-      ===================================================== -->
-
+    <!-- End Overview
+    ===================================================== -->  
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div> <!-- end overview -->
   
@@ -230,13 +83,13 @@ b.  langsung mengetahui hasil ujian setelah selesai mengerjakan ujian
     }
   </script>
 
-  <script src="js/libs/jquery-1.7.1.min.j"></script>
+  <script src="js/libs/jquery-1.7.1.min.js"></script>
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/impress.js"></script>
+  <script src="js/script.js"></script>
   <script>impress().init();</script>
-
 
 </body>
 </html>
