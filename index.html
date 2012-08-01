@@ -144,7 +144,7 @@
 
     <!-- 2. Landasan Teori
     ===================================================== -->
-    <div id="landasan-teori" class="step" data-x="4500" data-y="-1500" data-z="4000" data-rotate="180" data-scale="3">
+    <div id="landasan-teori" class="step" data-x="4500" data-y="-1500" data-z="4000" data-rotate="180">
       <h1 class="wrap">Landasan Teori</h1>
       <ol>
         <li><a href="#" data-toggle="modal" data-target="#modalrplbo">Rekayasa Perangkat Lunak Berbasis Objek</a></li>
@@ -156,11 +156,171 @@
       </ol>
     </div>
 
+     <!-- 3. Analisia dan Perancangan
+    ===================================================== -->
+      <!-- 3.1 Prosedur USM
+      ===================================================== -->
+      <div id="prosedur" class="step" data-x="4500" data-y="-3000" data-z="8000" data-scale="3">
+        <h1 class="wrap">Prosedur Ujian Saringan Masuk</h1>
+        <ol>
+          <li>Penentuan batas nilai minimal (passing grade) -> Kaprodi</li>
+          <li>Pembuatan topik -> TU</li>
+          <li>Pendataan jenjang pendidikan, pengaturan topik dan bobot topik pada setiap jenjang -> TU</li>
+          <li>Pendataan dosen -> Kaprodi</li>
+          <li>Pembuatan soal-soal ujian -> Dosen</li>
+          <li>Pendataan calon mahasiswa baru -> TU</li>
+          <li>Pelaksanaan ujian online -> Calon Mahasiswa</li>
+          <li>Hasil seleksi -> Calon Mahasiswa</li>
+          <li>Laporan -> TU</li>
+        </ol>
+      </div>
+      <!-- 3.2 Penskoran
+      ===================================================== -->
+      <div id="penskoran" class="step" data-x="4500" data-y="0" data-z="8000" data-scale="3">
+        <h1 class="wrap">Penskoran USM</h1>
+        <ol>
+          <li>tidak membatasi jumlah topik yang dibuat dan yang dipilih sebagai bahan ujian</li>
+          <li>tidak membatasi jumlah soal </li>
+          <li>dapat menentukan sendiri nilai passing grade </li>
+          <li>dapat menentukan topik yang berbeda pada setiap jenjangnya </li>
+          <li>setiap topik yang dipilih harus memberikan bobot</li>
+          <li>penjumlahan dari semua topik harus berjumlah 100</li>
+        </ol>
+      </div>
+      <!-- 3.2 Penskoran
+      ===================================================== -->
+      <div id="rumus" class="step" data-x="4500" data-y="3000" data-z="8000" data-scale="3">
+        <h1 class="wrap">Rumus Penskoran (berdasarkan asumsi)</h1>
+        <img src="img/rumus.png">
+      </div>
+
+      <!-- 3.4 Use Case
+      ===================================================== -->
+      <div id="use-case" class="step" data-x="4500" data-y="6000" data-z="8000" data-scale="3">
+        <h1 class="wrap">Use Case Diagram</h1>
+        <img src="img/use-case.png">
+      </div>
+
+      <!-- 3.5 Activity Diagram
+      ===================================================== -->
+      <div id="activity-diagram" class="step top" data-x="4500" data-y="9000" data-z="8000" data-scale="3">
+        <h1 class="wrap">Activity Diagram</h1>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Kaprodi</a></li>
+            <li><a href="#tab2" data-toggle="tab">Tata Usaha</a></li>
+            <li><a href="#tab3" data-toggle="tab">Dosen</a></li>
+            <li><a href="#tab4" data-toggle="tab">Calon Mahasiswa</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <img src="img/adkaprodi.png" />
+            </div>
+            <div class="tab-pane" id="tab2">
+              <img src="img/adtu.png" />
+            </div>
+            <div class="tab-pane" id="tab3">
+              <img src="img/addosen.png" />
+            </div>
+            <div class="tab-pane" id="tab4">
+              <img src="img/admahasiswa.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3.6 Class Diagram
+      ===================================================== -->
+      <div id="class-diagram" class="step top" data-x="4500" data-y="12000" data-z="8000" data-scale="3">
+        <h1 class="wrap">Class Diagram</h1>
+        <img src="img/class.png" />
+      </div>
+      <!-- 3.7 Sequencial
+      ===================================================== -->
+      <div id="sequencial-diagram" class="step top" data-x="4500" data-y="15000" data-z="8000" data-scale="3">
+        <h1 class="wrap">Class Diagram</h1>
+        <img src="img/kapdosen.png" height="100%"/>
+      </div>
+      <!-- 3.8 Perancangan Antar Muka
+      ===================================================== -->
+
+    <!-- 4. Implementasi dan Pengujian
+    ===================================================== -->
+
+      <!-- 4.1 Penyiapan Lingkungan Kerja
+      ===================================================== -->
+      <div id="lingkungan-kerja" class="step top" data-x="200" data-y="1200" data-z="500" data-scale="2">
+        <h1 class="wrap">Implementasi dan Pengujian</h1>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab5" data-toggle="tab">Area Kerja</a></li>
+            <li><a href="#tab6" data-toggle="tab">Tata Usaha</a></li>
+            <li><a href="#tab7" data-toggle="tab">Dosen</a></li>
+            <li><a href="#tab8" data-toggle="tab">Calon Mahasiswa</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab5">
+              <h2>Penyiapan Lingkungan Kerja</h2>
+              <ol>
+                <li>Spesifikasi Kebutuhan Sistem Pada Area Kerja dan Pengujian</li>
+                <li>Penyiapan Area Lingkungan Kerja (Local Environment)</li>
+                <li>Penyiapan Perangkat Lunak Manejemen Kontrol </li>
+                <li>Pembuatan Milestone dan Issue/Task</li>
+              </ol>
+            </div>
+            <div class="tab-pane" id="tab6">
+              <img src="img/adtu.png" />
+            </div>
+            <div class="tab-pane" id="tab7">
+              <img src="img/addosen.png" />
+            </div>
+            <div class="tab-pane" id="tab8">
+              <img src="img/admahasiswa.png" />
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <!-- 4.2 Implementasi
+      ===================================================== -->
+
+      <!-- 4.3 Pengujian
+      ===================================================== -->
+
+    <!-- 5. Kesimpulan dan Saran
+    ===================================================== -->
+
+      <!-- 5.1 Kesimpulan
+      ===================================================== -->
+      <div id="kesimpulan">
+        <h1>Kesimpulan</h1>
+        <ol>
+          <li>Aplikasi ujian saringan masuk online dapat bejalan dengan baik.</li>
+          <li>Pengembangan dengan metodologi parallel development sangatlah mudah di implementasikan dengan menggunakan Git.</li>
+          <li>Penggunaan kerangka kerja (framework) dalam hal ini Laravel (PHP Framework) dan Twitter Bootstrap (User Interface Framework) sangat memudahkan serta mempercepat proses pembuatan aplikasi.</li>
+          <li>eature lock screen dapat di implementasikan dengan memanfaatkan teknologi full screen API yang terdapat pada peramban situs (browser) yang telah mendukung teknologi HTML5.</li>
+        </ol>
+      </div>
+
+      <!-- 5.2 Saran
+      ===================================================== -->
+      <div id="saran">
+        <h1>Saran</h1>
+        <ol>
+          <li>Autentifikasi sistem saat ini hanya menggunakan nama pengguna (username) dan kata kunci (password) sehingga dalam proses autentifikasi sistem tidak tahu apakah dia memang benar-benar pengguna yang bersangkutan atau bukan, untuk itu penulis menyarankan agar dapat dilakukan pengembangan lebih lanjut pada fitur sistem pengenalan wajah pengguna.</li>
+          <li>Proses pengolahan data calon mahasiswa baru masih bersifat manual, penulis menyarankan agar dilakukan pengembangan lebih lanjut pada fitur sinkronisasi data calon mahasiwa baru dengan menggunakan API Sistem Informasi Universitas Mercu Buana</li>
+          <li>Perlu adanya fasiltas untuk melakukan reset jawaban calon mahasiswa baru yang terdapat pada menu tata usaha. Fasiltas ini sangat diperlukan ketika terjadi permasalahan diluar sistem seperti: listrik tiba-tiba mati dan koneksi internet terputus</li>
+        </ol>
+      </div>
+      
     <!-- End Overview
     ===================================================== -->  
     <div id="overview" class="step" data-x="100" data-y="550" data-scale="10">
     </div> <!-- end overview -->
-    
+  
+
+
+
   </div> <!-- end impress capsul -->
 
   <!-- Start Modal Helper RPLBO

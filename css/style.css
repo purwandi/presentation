@@ -14,7 +14,7 @@
 
 /* custom
 ====================================================== */
-.step.top {height: 600px;}
+.step.top {height: 700px;}
 .step.top h1 {display: block;}
 .step.top h1:after {
     content: "";
@@ -31,7 +31,7 @@ h1.wrap {
   line-height: 36px;
   color: #333333;
   border: 0;
-  border-bottom: 3px solid #e5e5e5;s
+  border-bottom: 3px solid #e5e5e5;
 }
 
 .footnote {
