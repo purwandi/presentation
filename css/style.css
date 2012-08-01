@@ -48,6 +48,23 @@ ol li {
 .center {
   text-align: center;
 }
+/* Media Number
+-------------------------------------------------- */
+.number {
+  width: 35px;
+  height: 35px;
+  line-height:35px;
+  background-color: #0088CC;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  float: left;
+  margin: 10px 10px 0 0;
+  content: "";
+  display: block;
+  clear: both;
+}
+
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
   a, a:visited { text-decoration: underline; }

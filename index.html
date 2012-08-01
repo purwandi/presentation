@@ -84,19 +84,17 @@
       ===================================================== -->
       <div id="latar-belakang" class="step top" data-x="3000" data-y="-1500" data-rotate="180">
         <h1 class="wrap">Latar Belakang</h1>
-        <ol>
-          <li>Ujian sekarang dapat dilakukan secara online melalui peramban web</li>
-          <li>Ujian saringan masuk online yang ada saat ini masih terdapat celah untuk melakukan tindak kecurangan.</li>
-          <li>Dalam pelaksanaan, calon mahasiswa baru dapat membuka jendela baru di peramban web maupun perangkat lunak lainnya</li>
-          <li>Perlu sebuah sistem yang dapat mengunci layar (lock screen)</li>
-        </ol>
+        <p><div class="number"> 1 </div>Ujian sekarang dapat dilakukan secara online melalui peramban web</p><br />
+        <p><div class="number"> 2 </div>Ujian saringan masuk online yang ada saat ini masih terdapat celah untuk melakukan tindak kecurangan.</p><br />
+        <p><div class="number"> 3 </div>Dalam pelaksanaan, calon mahasiswa baru dapat membuka jendela baru di peramban web maupun perangkat lunak lainnya</p><br />
+        <p><div class="number"> 4 </div>Perlu sebuah sistem yang dapat mengunci layar (lock screen)</p>
       </div>
       <!-- 1.2. Perumusan Masalah
       ===================================================== -->
       <div id="rumusan-masalah" class="step top" data-x="3000" data-y="-1500" data-z="-2000">
         <h1 class="wrap">Perumusan Masalah</h1>
-        <p>Bagaimana merancang dan membangun sistem perangkat lunak untuk pelaksanaan ujian saringan masuk secara online? </p>
-        <p>Bagaimana mengimplementasikan lock screen pada sistem ujian saringan masuk online?</p>
+        <div class="number"> 1 </div><p>Bagaimana merancang dan membangun sistem perangkat lunak untuk pelaksanaan ujian saringan masuk secara online? </p>
+        <div class="number"> 2 </div><p>Bagaimana mengimplementasikan lock screen pada sistem ujian saringan masuk online?</p>
       </div>
       <!-- 1.3. Batasan Penelitian
       ===================================================== -->
@@ -116,8 +114,8 @@
       ===================================================== -->
       <div id="tujuan" class="step" data-x="4500" data-y="-750">
         <h1 class="wrap">Tujuan</h1>
-        <p>Melakukan rancang bangun sistem ujian saringan masuk online agar pelaksanaan ujian dapat di lakukan dimana saja</p>
-        <p>Mengimplementasikan fullscreen API untuk penguncian layar (lock screen) pada sistem ujian saringan masuk online</p>
+        <div class="number"> 1 </div><p>Melakukan rancang bangun sistem ujian saringan masuk online agar pelaksanaan ujian dapat di lakukan dimana saja</p>
+        <div class="number"> 2 </div><p>Mengimplementasikan fullscreen API untuk penguncian layar (lock screen) pada sistem ujian saringan masuk online</p>
       </div>
       <!-- 1.5. Manfaat
       ===================================================== -->
@@ -138,19 +136,77 @@
       </div>
       <!-- 1.6. Metodologi Penelitian
       ===================================================== -->
-      <div id="metodologi" class="step" class="step" data-x="4500" data-y="750">
+      <div id="metodologi" class="step" data-x="4500" data-y="750">
         <h1 class="wrap">Metodologi Penelitian</h1>
         <p>Menggunakan metode rekayasa perangkat lunak model parallel development</p>
         <img src="img/parallel.png">
       </div>
 
+    <!-- 2. Landasan Teori
+    ===================================================== -->
+    <div id="landasan-teori" class="step" data-x="4500" data-y="-1500" data-z="4000" data-rotate="180" data-scale="3">
+      <h1 class="wrap">Landasan Teori</h1>
+      <ol>
+        <li><a href="#" data-toggle="modal" data-target="#modalrplbo">Rekayasa Perangkat Lunak Berbasis Objek</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modalsdlc">SDLC</a></li>
+        <li>Pemrogaman Berorientasi Objek</li>
+        <li>PHP & Laravel PHP Framework</li>
+        <li>Git Version Control</li>
+        <li>HTML5</li>
+      </ol>
+    </div>
+
     <!-- End Overview
     ===================================================== -->  
     <div id="overview" class="step" data-x="100" data-y="550" data-scale="10">
     </div> <!-- end overview -->
-  
+    
   </div> <!-- end impress capsul -->
 
+  <!-- Start Modal Helper RPLBO
+  ===================================================== -->  
+  <div class="modal hide" id="modalrplbo">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h3>Rekayasa Perangkat Lunak Berorientasi Objek </h3>
+    </div>
+    <div class="modal-body">
+      <strong>Rekayasa Perangkat Lunak Berorientasi Objek</strong>
+      <p>Pengembangan perangkat lunak berorientasi objek adalah suatu strategi pengembangan perangkat lunak yang mengorganisasikan perangkat lunak sebagai kumpulan objek yang berisi data dan operasi yang diberlakukan terhadapnya (Rosa A.S dkk. 4). </p>
+
+      <strong>Pilar utama dalam rekayasa perangkat lunak berorientasi objek yaitu:</strong>
+      <ul>
+        <li>Encapsulation (pengkapsulan) penyembunyian informasi.</li>
+        <li>Inheritance (turunan)</li>
+        <li>Polymorphism (method/fungsi yang sama akan tetapi berbeda cara penerapannya).</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- Start Modal Helper SDLC
+  ===================================================== -->  
+  <div class="modal hide" id="modalsdlc">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h3>Software Development Life Cycle (SDLC) </h3>
+    </div>
+    <div class="modal-body">
+      <strong>Software Development Life Cycle (SDLC) </strong>
+      <p>proses mengembangkan atau mengubah suatu sistem perangkat lunak dengan menggunakan mode-model dan metodologi yang digunakan orang untuk mengembangkan sistem-sistem perangkat lunak sebelumnya  (Rosa A.S dkk. 24).</p>
+
+      <strong>Tahapan Software Development Life Cycle secara umum adalah sebagai berikut:</strong>
+      <ul>
+        <li>Perencanaan, adalah tahapan proses untuk mengetahui kenapa sistem tersebut dibangun, dan menjelaskan pengalokasian sumber daya unutk membangun sistem tersebut. Pada tahapan ini dilakukan kegiatan yang meliputi inisiasi proyek, analisa kelayakan dan manajemen proyek.</li>
+        <li>Analisa, adalah tahapan proses untuk mengetahuo apa yang akan dilakukan oleh sistem, siapa yang yang akan menggunakannya, dimana dan kapan sistem tersebut akan digunakan. Pada tahapan ini dilakukan kegiatan untuk as-is sistem dan to-be sistem, requirement gathering, dan sistem proposal</li>
+        <li>Desain, adalah proses untuk mengetahui bagaiamana sistem akan beroperasi, meliputi perangkat keras (hardware), perangkat lunak (software), basis data (database), program, antarmuka (user interface) yang dibutuhkan untuk melakukan pengembangan sistem tersebut. Pada tahapan ini dilakukan kegiatan yang meliputi: strategi desain, arsitektur sistim, spesifikasi basis data dan berkas (file), dan kode program</li>
+        <li>Implementasi, adalah tahapan untuk proses mengeksekusi sistim secara real. Pada tahapan ini dilakukan kegiatan yang meliputi: konstruksi, instalasi dan bantuan (support).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Display Hint
+  ===================================================== --> 
   <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
   </div>
