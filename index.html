@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
-  <script src="js/prefixfee.js"></script>
   <script>
     (function(d,ua){
       if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
@@ -44,7 +43,7 @@
   <div id="impress">
     <!--  Title
     ===================================================== -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="1">
+    <div id="title" class="step" data-x="-1000" data-y="-1500">
       <h1 class="center">
         <div class="short">APLIKASI UJIAN SARINGAN MASUK FAKULTAS ONLINE</div>
         <div class="css">DENGAN FITUR LOCK SCREEN PADA FAKULTAS ILMU KOMPUTER</div>
@@ -66,10 +65,88 @@
       </div>     
     </div> <!-- end title -->
 
+    <!--  Agenda Presentasi
+    ===================================================== -->
+    <div id="agenda" class="step top" data-x="1500" data-y="-1500">
+      <h1 class="wrap">Agenda Presentasi</h1>
+      <ol>
+        <li>Pendahuluan</li>
+        <li>Tinjauan Pustaka</li>
+        <li>Analisa dan Perancangan</li>
+        <li>Implementasi dan Pengujian</li>
+        <li>Kesimpulan dan Saran</li>
+      </ol>
+    </div>
+
+    <!-- 1. Pendahuluan
+    ===================================================== -->
+      <!-- 1.1. Latar Belakang
+      ===================================================== -->
+      <div id="latar-belakang" class="step top" data-x="3000" data-y="-1500" data-rotate="180">
+        <h1 class="wrap">Latar Belakang</h1>
+        <ol>
+          <li>Ujian sekarang dapat dilakukan secara online melalui peramban web</li>
+          <li>Ujian saringan masuk online yang ada saat ini masih terdapat celah untuk melakukan tindak kecurangan.</li>
+          <li>Dalam pelaksanaan, calon mahasiswa baru dapat membuka jendela baru di peramban web maupun perangkat lunak lainnya</li>
+          <li>Perlu sebuah sistem yang dapat mengunci layar (lock screen)</li>
+        </ol>
+      </div>
+      <!-- 1.2. Perumusan Masalah
+      ===================================================== -->
+      <div id="rumusan-masalah" class="step top" data-x="3000" data-y="-1500" data-z="-2000">
+        <h1 class="wrap">Perumusan Masalah</h1>
+        <p>Bagaimana merancang dan membangun sistem perangkat lunak untuk pelaksanaan ujian saringan masuk secara online? </p>
+        <p>Bagaimana mengimplementasikan lock screen pada sistem ujian saringan masuk online?</p>
+      </div>
+      <!-- 1.3. Batasan Penelitian
+      ===================================================== -->
+      <div id="batasan" class="step top" data-x="4500" data-y="-1500">
+        <h1 class="wrap">Batasan Masalah</h1>
+        <ol>
+          <li>Terdiri dari beberapa topik mata pelajaran, dimana dalam sebuah topik memiliki bobot, waktu  dan beberapa soal ujian</li>
+          <li>Dapat berupa soal cerita, sehingga di dalam sebuah soal cerita dapat terdiri dari beberapa soal</li>
+          <li>Soal ujian saringan masuk berbentuk pilihan ganda</li>
+          <li>Sistem penilaian yang digunakan mempunyai rentang antara 0 sampai dengan 100</li>
+          <li>Hanya bisa berjalan pada perangkat lunak web terbaru (HTML5 fullscreen API)</li>
+          <li>Tidak bisa berjalan di browser handphone maupun smartphone</li>
+          <li>Dalam pengembangan menggunakan PHP (Laravel Framework) dan untuk tampilan pengguna memakai Twitter Bootstrap</li>
+        </ol>
+      </div>
+      <!-- 1.4. Tujuan
+      ===================================================== -->
+      <div id="tujuan" class="step" data-x="4500" data-y="-750">
+        <h1 class="wrap">Tujuan</h1>
+        <p>Melakukan rancang bangun sistem ujian saringan masuk online agar pelaksanaan ujian dapat di lakukan dimana saja</p>
+        <p>Mengimplementasikan fullscreen API untuk penguncian layar (lock screen) pada sistem ujian saringan masuk online</p>
+      </div>
+      <!-- 1.5. Manfaat
+      ===================================================== -->
+      <div id="manfaat" class="step" data-x="4500" data-y="0">
+        <h1 class="wrap">Manfaat</h1>
+        <p>Mengurangi tindak kecurangan yang terjadi pada saat ujian saringan fakultas secara online dilaksanakan</p>
+        <p>Untuk pihak fakultas</p>
+        <ol>
+          <li>membantu proses administrasi</li>
+          <li>menjaring calon mahasiswa baru yang memenuhi kriteria dan karakteristik masing-masing fakultas</li>
+          <li>meningkatkan mutu pendidikan di fakultas</li>
+        </ol>
+        <p>Untuk calon mahasiswa</p>
+        <ol>
+          <li>menghemat waktu dan biaya transportasi</li>
+          <li>langsung mengetahui hasil ujian setelah selesai mengerjakan ujian</li>
+        </ol>
+      </div>
+      <!-- 1.6. Metodologi Penelitian
+      ===================================================== -->
+      <div id="metodologi" class="step" class="step" data-x="4500" data-y="750">
+        <h1 class="wrap">Metodologi Penelitian</h1>
+        <p>Menggunakan metode rekayasa perangkat lunak model parallel development</p>
+        <img src="img/parallel.png">
+      </div>
 
     <!-- End Overview
     ===================================================== -->  
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="overview" class="step" data-x="100" data-y="550" data-scale="10">
     </div> <!-- end overview -->
   
   </div> <!-- end impress capsul -->
@@ -88,7 +165,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/impress.js"></script>
-  <script src="js/script.js"></script>
   <script>impress().init();</script>
 
 </body>

@@ -1,6 +1,5 @@
 
 body {
-    font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 }
 
@@ -55,8 +54,8 @@ i, em { font-style: italic }
     width: 940px;
     padding: 40px;
     margin: 20px auto;
-    font-size: 16px;
-
+    font-size: 20px;
+    line-height: 26px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
     -ms-box-sizing:     border-box;
@@ -106,8 +105,6 @@ i, em { font-style: italic }
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
     letter-spacing: -1px;
 }
 

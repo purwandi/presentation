@@ -2,46 +2,47 @@
 
 /* title
 ====================================================== */
-
 #impress.step-title .step { opacity: 0.1; }
-
 #impress.step-title .active { opacity: 1; }
-
-@keyframes rotate-h1 {
-  0%   { transform: perspective(1000px) rotateY(-10deg); }
-  100% { transform: perspective(1000px) rotateY(10deg); }
-}
 
 #title h1 {
   text-align: center;
-  transform-style: preserve-3d;
-  animation: rotate-h1 2s infinite alternate ease-in-out;
-  transform: perspective(1000px) rotateY(0deg);
-  transition: all 2s ease-in-out;
-  font-size: 28px
+  font-size: 25px;
+  margin-bottom:40px;
 }
 
-#title h1 .short {
-  line-height: 40px;
-  margin-bottom: 10px;
-  transform: translateZ(-50px);
+
+/* custom
+====================================================== */
+.step.top {height: 600px;}
+.step.top h1 {display: block;}
+.step.top h1:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-#title h1 .css {
-  font-size: 0.9em;
+h1.wrap {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 27px;
+  padding-bottom: 10px;
+  line-height: 36px;
+  color: #333333;
+  border: 0;
+  border-bottom: 3px solid #e5e5e5;s
 }
-
-#title h1 .transforms {
-  margin-top: 25px;
-  line-height: 40px;
-  transform: translateY(-0.6em) translateZ(50px);
-}
-
 
 .footnote {
   margin-top:20px;
   border-top:4px #CCC solid;
   padding-top: 10px;
+  font-size: 17px;
+  line-height: 20px;
+}
+ol li {
+  line-height: 40px;
 }
 
 .center {
