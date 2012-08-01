@@ -74,13 +74,11 @@
       ===================================================== -->
       <div id="latar-belakang" class="step" data-x="4200" data-y="100" data-z="100" data-rotate-y="150" data-scale="1">
         <h1>Latar Belakang</h1>
-        <div class="number">1</div> <p>Fakultas Ilmu Komputer ingin melakukan ujian saringan masuk calon mahasiswa baru yang dilakuka  secara online </p>
-        <div class="number">2</div><p>Ujian saringan masuk online yang ada saat ini, tidak mampu mengatasi tindak kecurangan yang dilakukan oleh calon mahasiswa baru ketika melakukan pengisian ujian online. </p>
-        <ol>
-          <li>Misalnya membuka window baru (dimana window tersebut memuat jawaban untuk menjawab soal)</li>
-          <li>Soal ujian yang ditampilkan dalam sistem,  masih sama antara calon mahasiswa satu dengan yang lain</li>
-        </ol>
-        <div class="number">3</div><p>Dengan adanya fitur fullscreen api yang terdapat di perangkat lunak peramban web modern, dimungkinkan pengerjaan ujian saringan masuk online melalui perangkat lunak peramban web dapat di kunci (lock) sehingga tidak dapat membuka window baru</p>
+        <p>Ujian yang dulunya hanya dapat dilaksanakan secara konvensional sekarang dapat dilakukan secara online. </p>
+
+        <p>Ujian saringan masuk online yang ada saat ini masih terdapat celah untuk melakukan tindak kecurangan. </p>
+        <p>Hal ini dikarenakan calon mahasiswa baru dapat membuka jendela (window) baru di peramban (browser) web maupun perangkat lunak lainnya, dimana di dalam jendela tersebut dapat memuat jawaban untuk menjawab soal.</p>
+        
       </div>
 
       <!-- 1.2. Perumusan Masalah
@@ -97,33 +95,57 @@
         <h1>Perumusan Masalah</h1>
         <ol>
           <li>Ujian terdiri dari beberapa topik mata pelajaran, dimana dalam sebuah topik memiliki bobot, waktu  dan beberapa soal ujian</li>
-          <li>Soal ujian dapat berupa soal cerita, sehingga di dalam sebuah soal cerita dapat terdiri dari beberapa soal</li>
+          <li>Dapat berupa soal cerita, sehingga di dalam sebuah soal cerita dapat terdiri dari beberapa soal</li>
           <li>Soal ujian saringan masuk berbentuk pilihan ganda</li>
           <li>Sistem penilaian yang digunakan mempunyai rentang antara 0 sampai dengan 100</li>
-          <li>Sistem ujian saringan fakultas hanya bisa berjalan pada perangkat lunak web terbaru, dimana perangkat lunak tersebut telah menggunakan teknologi HTML5 khususnya fullscreen API</li>
-          <li>Sistem ujian saringan fakultas tidak bisa berjalan di browser handphone maupun smartphone</li>
-          <li>Dalam pengembangan perangkat lunak ujian saringan masuk online menggunakan bahasa pemrogaman PHP dan memakai Laravel Framework dan untuk tampilan pengguna (user interface) penulis menggunakan Twitter Bootstrap</li>
+          <li>Hanya bisa berjalan pada perangkat lunak web terbaru (HTML5 fullscreen API)</li>
+          <li>Tidak bisa berjalan di browser handphone maupun smartphone</li>
+          <li>Dalam pengembangan menggunakan PHP(Laravel Framework) dan untuk tampilan pengguna memakai Twitter Bootstrap</li>
         </ol>
       </div>
 
       <!-- 1.4. Tujuan
       ===================================================== -->
-
+      <div id="tujuan" class="step">
+        <p>Melakukan rancang bangun sistem ujian saringan masuk online agar pelaksanaan ujian dapat di lakukan dimana saja</p>
+        <p>Mengimplementasikan fullscreen API untuk penguncian layar (lock screen) pada sistem ujian saringan masuk online</p>
+      </div>
       <!-- 1.5. Manfaat
       ===================================================== -->
+      <div id="manfaat" class="step">
+        <p>Mengurangi tindak kecurangan yang terjadi pada saat ujian saringan fakultas secara online dilaksanakan</p>
+        <p>Untuk pihak fakultas</p>
+        a.  membantu proses administrasi.
+b.  mengurangi biaya pelaksanaan ujian, terutama penggunaan kertas.
+c.  menjaring calon mahasiswa baru yang memenuhi kriteria dan karakteristik masing-masing fakultas.
+d.  mengetahui rekapitulasi jumlah mahasiswa yang lolos dan tidak lolos seleksi pada setiap hari atau pada waktu tertentu.
+e.  meningkatkan mutu pendidikan di fakultas.
+f.  meninggkatkan kualitas kelulusan.
+3.  Untuk calon mahasiswa, dengan menggunakan perangkat lunak ini dapat:
+a.  menghemat waktu dan biaya transportasi, karena dapat mengikuti proses ujian diluar universitas.
+b.  langsung mengetahui hasil ujian setelah selesai mengerjakan ujian
 
+      </div>
       <!-- 1.6. Metodologi Penelitian
       ===================================================== -->
-
-      <!-- 1.7. Sistematika Penulisan
-      ===================================================== -->
-
+      <div id="metodologi" class="step">
+       Dalam melakukan penelitian, penulis menggunakan metode rekayasa perangkat lunak model parallel development. Parallel development merupakan salah satu metode pengembangan perangkat lunak yang banyak digunakan. Dengan metode parallel ini pengembang dapat membagi poses pengembangan menjadi sub-sub / cabang-cabang yang bisa di kerjakan secara parallel. Metode ini sangat efisien karena dapat mempercepat waktu pengembangan sistem perangkat lunak.
+      </div>
 
     <!-- 2. Landasan Teori
     ===================================================== -->
-
-      <!-- 2.1 Rekayasa Perangkat Lunak
+    <div id="landasan-teori">
+      Pada Bab Landasan Teori  di bahas mengenai landasan-landasan teori 
+      yang berhubungan dengan Teori Perencanaan Kapasitas Sumber Daya TI secara umum & Sistem Jaringan, secara khusus yang berhubungan dengan Bandwidth.
+    </div>
+      <!-- 2.1 Rekayasa Perangkat Lunak Berbasisi Objek
       ===================================================== -->
+      Rekayasa Perangkat Lunak Berorientasi Objek
+      strategi pengembangan perangkat lunak yang mengorganisasikan perangkat lunak sebagai kumpulan objek yang berisi data dan operasi yang diberlakukan terhadapnya 
+      a.  Encapsulation (pengkapsulan) penyembunyian informasi.
+      b.  Inheritance (turunan)
+      c.  Polymorphism (method/fungsi yang sama akan tetapi berbeda cara penerapannya).
+
 
       <!-- 2.2 SDLC
       ===================================================== -->
@@ -133,12 +155,28 @@
 
       <!-- 2.4 PHP & Laravel
       ===================================================== -->
+      Laravel adalah kerangka aplikasi web PHP 5.3 yang ditulis oleh Taylor Otwell. Kerangka kerja ini ditulis dengan PHP 5.3 fitur dalam pikiran. Kombinasi fitur dan sintaks sangat ekspresif telah menyebabkan kerangka kerja ini mulai populer. Framework ini menganut alur sistem berbasis MVC
+
+      Gambar MVC
 
       <!-- 2.5 Git Version Control
       ===================================================== -->
+      Kontrol versi (version control) adalah sebuah sistem yang mencatat setiap perubahan terhadap sebuah berkas atau kumpulan berkas sehingga pada suatu dapat dikembalikan kepada salah satu versi dari berkas tersebut 
 
       <!-- 2.6 HTML5
       ===================================================== -->
+      HTML5 merupakan revisi kelima dari HTML markup languange yang didalamnya membawa CSS3 dan serangkain javascript API baru. Bersama-sama, teknologi ini memungkinkan untuk membuat aplikasi yang kompleks yang sebelumnya hanya dapat dibuat untuk platform desktop
+
+      Fitur baru dalam HTML5 antara lain:
+1.  Class Multimedia, elemen video dan audio  untuk media pemutaran
+2.  Class Offline and Storage, dukungan yang lebih baik untuk penyimpanan secara offline, aplikasi web dapat berjalan cepat dan bekerja walaupun tidak adanya koneksi internet. Hal ini dikarenakan aplikasi HTML5 cache, Indexed DB dan File API
+3.  Class Performance and Integration
+4.  Class Semantic, elemen  konten yang  lebih  spesifik, seperti  artikel, footer, header, navigation, section serta penambahan bentuk form kontrol seperti kalender, tanggal, waktu, e-mail, URL, search.
+5.  Class CSS3
+6.  Class 3D, Graphics and Effects, terdapat teknologi SVG, Canvas, WebGL dan CSS3 3D fitur yang memungkin hal ini terjadi
+7.  Class Connectivity, konektifitas yang lebih efisien ini berarti real-time chating, game yang lebih cepat dan komunikasi yang lebig baik 
+8.  Class Device Access, dimulai dengan Geolocation API, Aplikasi Web dapat menyajikan kaya, perangkat-sadar fitur dan pengalaman. Inovasi perangkat akses yang luar biasa sedang dikembangkan dan dilaksanakan, dari audio / video input untuk akses.
+
 
       <!-- 2.7 Ujian Saringan Masuk
       ===================================================== -->
