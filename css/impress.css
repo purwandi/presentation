@@ -120,13 +120,6 @@ i, em { font-style: italic }
     white-space: nowrap;
 }
 
-/*
-    The last step is an overview.
-    There is no content in it, so we make sure it's not visible because we want
-    to be able to click on other steps.
-
-*/
-#overview { display: none }
 
 /*
     We also make other steps visible and give them a pointer cursor using the
